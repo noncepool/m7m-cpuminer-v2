@@ -1118,7 +1118,7 @@ static int scanhash_m7hash(int thr_id, uint32_t *pdata, const uint32_t *ptarget,
 
 	do {
 		data[19] = ++n;
-		M7MHash((const char *)hash, (const unsigned char *)data, 80);
+		M7MHash_v2((const char *)hash, (const unsigned char *)data, 80, data[19]);
 		int rc = fulltest_m7hash(hash, ptarget);
 		if (rc) {
             if (opt_debug) {

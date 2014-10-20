@@ -3,8 +3,7 @@
 extern "C" {
 #endif
 
-void m7hash(const char *finalhash, const unsigned char *data, int len);
-void M7MHash(const char *finalhash, const unsigned char *data, int len);
+void M7MHash_v2(const char *finalhash, const unsigned char *data, int len, const unsigned int nnNonce);
 
 #ifdef __cplusplus
 }
