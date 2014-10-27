@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <cmath>
 #include <gmp.h>
+#include <limits>
 #include "uint256.h"
 #include "sph_sha2.h"
 #include "sph_keccak.h"
